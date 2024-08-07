@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formualrio encuesta</title>
+</head>
+<body>
+    <form>
+        <label for="opciones">Selecciona más de una opción:</label><br>
+        <select id="opciones" name="opciones" multiple>
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select><br><br>
+
+        <label for="country">Selecciona tu país:</label><br>
+        <select id="country" name="country" required>
+            <option value="">Selecciona un país</option>
+            <option value="usa">🇺🇸 USA</option>
+            <option value="canada">🇨🇦 Canadá</option>
+            <option value="uruguay">🇺🇾 Uruguay</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Género:</legend>
+            <label>
+                <input type="radio" name="gender" value="male" required>
+                Masculino
+            </label><br>
+            <label>
+                <input type="radio" name="gender" value="female">
+                Femenino
+            </label><br>
+            <label>
+                <input type="radio" name="gender" value="other">
+                Otro
+            </label><br>
+        </fieldset><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+
